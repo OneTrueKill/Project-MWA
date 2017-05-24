@@ -1,0 +1,36 @@
+<% include shared/header.ejs %>
+
+<div>
+    <h1>Welcome back <%= locals.username %>!</h1>
+
+
+    <h3>Quote of the day</h3>
+    <p>Be the gains you want to see in the world</p>
+    <p>-Gaindy</p>
+
+    <h3>Featured routines</h3>
+
+    <div id="featured">
+
+        <% for(let i =0; i<locals.feat.length; i++) {
+            %>
+            <article>
+              <h4><%=locals.feat[i].title%></h4>
+                <p>rating: <span id="rate"><%=locals.feat[i].rating%></span></p>
+                <a href="/editRoutine?routeId=<%=locals.feat[i].id %>"> view</a>
+
+                <a href="#" id="<%=locals.feat[i].id %>" class="like">Like</a>
+                <a href="#" id="<%=locals.feat[i].id %>" class="dislike">dislike</a>
+            </article>
+        <%
+        }%>
+
+    </div>
+
+</div>
+
+
+<% include shared/footer.ejs %>
+
+
+</html>

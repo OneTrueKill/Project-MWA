@@ -1,0 +1,27 @@
+<% include shared/header.ejs %>
+
+
+<h3><%= locals.routine.title %></h3>
+
+<% for (let i = 0; i < locals.routine.ex.length; i++){
+
+        for (let j = 0; j < locals.ex.length; j++){
+            if(locals.ex[j].id == locals.routine.ex[i]){
+                %>
+                <div>
+                    <h4> <%=locals.ex[j].name%> </h4>
+                    <%=locals.ex[j].description%>
+                    <!-- HTML tags in api call -->
+                </div>
+
+                <%
+            }
+
+        }
+}
+%>
+
+
+
+<% include shared/footer.ejs %>
+</html>

@@ -1,0 +1,31 @@
+<% include shared/header.ejs %>
+
+<div>
+    <h3>Welcome to Bro generator</h3>
+    <p>
+        This is a free site where you generate your own routines and customize them to your own liking and then
+        share them with the community.
+    </p>
+
+    <div id="login">
+        <% if(locals.username){
+
+        %><h1>Welcome back <%=username%>!</h1>
+        <a href="/login">Logout</a>
+        <%
+        }
+        else {
+        %>
+        <h4> You are currently not logged in</h4>
+        <a href='/login'> Go to the login page</a>
+        <a href='/register'> Become a memeber</a>
+        <%
+        } %>
+
+    </div>
+</div>
+
+
+<% include shared/footer.ejs %>
+
+</html>

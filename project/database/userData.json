@@ -1,0 +1,66 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "Email": "email@mail.com",
+      "name": "adminOverlord",
+      "password": "123"
+    }
+  ],
+  "Schema": [
+    {
+      "title": "testRoutine",
+      "creator": 1,
+      "muscle": "Abs",
+      "muscleId": 10,
+      "rating": 0,
+      "ex": [
+        "407",
+        "405",
+        "342",
+        "437"
+      ],
+      "id": 1
+    },
+    {
+      "title": "Abzzzz",
+      "creator": 3,
+      "muscle": "Abs",
+      "muscleId": 10,
+      "rating": 0,
+      "ex": [
+        "407",
+        "405",
+        "300",
+        "113"
+      ],
+      "id": 2
+    },
+    {
+      "title": "testRout2",
+      "creator": 2,
+      "muscle": "Back",
+      "muscleId": 12,
+      "rating": 0,
+      "ex": [
+        "362",
+        "109",
+        "110"
+      ],
+      "id": 3
+    },
+    {
+      "title": "More abzzzzz",
+      "creator": 1,
+      "muscle": "Abs",
+      "muscleId": 10,
+      "rating": 0,
+      "ex": [
+        "407",
+        "405",
+        "342"
+      ],
+      "id": 4
+    }
+  ]
+}

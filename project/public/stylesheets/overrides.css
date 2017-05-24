@@ -1,0 +1,27 @@
+
+
+table.scrollTable{
+    display: table;
+    width: 100%;
+}
+
+table.scrollTable thead, table.scrollTable tbody{
+    float: left;
+    width: 100%;
+}
+
+table.scrollTable tbody{
+    overflow: auto;
+    height: 200px;
+}
+
+table.scrollTable tr{
+    width: 100%;
+    display: table;
+    text-align: left;
+}
+
+table.scrollTable th, table.scrollTable td{
+    width: 20%;
+}
+

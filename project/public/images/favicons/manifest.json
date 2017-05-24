@@ -1,0 +1,21 @@
+{
+  "name": "Bro generator",
+  "short_name": "BroGen",
+  "theme_color": "#a06297",
+  "background_color": "#a06297",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "http://localhost:5000",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

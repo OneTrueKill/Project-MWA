@@ -1,0 +1,35 @@
+<% include shared/header.ejs %>
+
+
+<div>
+    <h3>Generator</h3>
+    <form action="/generate" method="post">
+
+        <label for="muscle">Choose a muscle to train</label>
+
+        <div>
+            <select name="muscle" id="muscle" class="">
+
+
+                <%
+                for( let i = 0; i < selectOptions.length; i++){
+                %>
+                <option value="<%= selectOptions[i].id %>"><%= selectOptions[i].name %> </option>
+
+                <%
+                }
+                %>
+
+            </select>
+        </div>
+
+        <button type="submit"> Go</button>
+    </form>
+
+
+</div>
+
+
+<% include shared/footer.ejs %>
+
+</html>

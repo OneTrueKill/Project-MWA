@@ -1,0 +1,18 @@
+<% include shared/header.ejs %>
+
+<form action="/changeAccount" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="<%= locals.data.name %>">
+    <label for="pass">password</label>
+    <input TYPE="password" id="pass" name="pass" value="<%= locals.data.password %>">
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" value="<%= locals.data.Email %>">
+    <input type="number" id="idNr" value="<%= locals.data.id %>" name="idNr" readonly hidden>
+
+
+    <input type="submit" value="change">
+</form>
+
+
+<% include shared/footer.ejs %>
+</html>

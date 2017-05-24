@@ -1,0 +1,29 @@
+<% include shared/header.ejs %>
+
+<h2> Login page </h2>
+
+<form action="doLogin" method="post">
+
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <%
+    if(locals.errorMessage){
+    %>
+    <p data-error="wrong"><%= errorMessage %> </p>
+    <%
+    }
+    %>
+
+    <button type="submit">Login</button>
+
+</form>
+
+<a href="/register">Don't have an account?</a>
+
+<% include shared/footer.ejs %>
+
+
+</html>
